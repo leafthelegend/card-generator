@@ -10,7 +10,7 @@ function getData(){return document.getElementById('text-input').value.split("\n"
 
 function preview(){
     let data = getData();
-    let previewDiv = document.getElementById('card-text');
+    let previewDiv = document.querySelector('.card-text');
     previewDiv.textContent = data[0];
 }
 function generate(){
